@@ -2,5 +2,17 @@
   "python.linting.enabled": true,
   "python.linting.pylintEnabled": true,
   "python.linting.pylintPath": "venv/bin/pylint", // ou apenas "pylint" se estiver no PATH
-  "python.linting.pylintArgs": []
+  "python.linting.pylintArgs": [],
+
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/*.pyc": { "when": "$(basename).py" },
+    "**/__pycache__": true,
+    "**/*.pytest_cache": true
+  }
 }
