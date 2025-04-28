@@ -4,7 +4,7 @@ from src.models.sqlite.entities.pets import PetsTable
 from sqlalchemy.orm.exc import NoResultFound
 
 
-
+ 
 class PeopleRepository(PeopleRepositoryInterface):
   def __init__(self, db_connection) -> None:
     self.__db_connection = db_connection
